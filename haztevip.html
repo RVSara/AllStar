@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Stars Music - VIPs</title>
+	<link rel="stylesheet" type="text/css" href="final.css">
+<style>
+	main>article {
+		width: 80%;
+		margin: 0 auto 3em;
+	}
+	main article ul {
+		width: fit-content;
+		margin: auto;
+		padding: 0 1em;
+		text-align: left;
+		border: 1px solid #ddd;
+	}
+	main article ul li {
+		list-style-type: square;
+		list-style-position: inside;
+	}
+	main form {
+		width: 60%;
+		margin: 1em auto 0;
+		padding: 1em;
+	}
+	main form fieldset {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0.5em;
+		padding: 1em;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+	}
+	main form fieldset:not(:last-of-type) > * {
+		flex: 1;
+		min-width: 180px;
+		margin: 0.25em 0;
+		padding: 0 2%;
+	}
+	main form fieldset :is(section,article) > * {
+		margin: inherit;
+	}
+	main form fieldset:first-of-type article {
+		display: flex;
+		flex-wrap: wrap;
+		min-width: 220px;
+	}
+	main form fieldset:first-of-type article label {
+		flex: 1;
+		flex-grow: 0;
+		min-width: 120px;
+	}
+	main form fieldset:first-of-type article input {
+		flex: 1;
+		min-width: 120px;
+	}
+	main form fieldset:nth-of-type(2) input:not([type="radio"]) {
+		width: 100%;
+	}
+	input[type="radio"]+label, input[type="checkbox"]+label {
+		margin-left: 1em;
+	}
+	main form fieldset:nth-of-type(3)>label {
+		min-width: 100%;
+	}
+	main form input {
+		border: none;
+		box-sizing: border-box;
+	}
+	main form input:invalid {
+		border: 2px solid transparent;
+		box-shadow: 0 0 5px #000;
+	}
+	main form input:valid {
+		border: 2px solid #00ffce;
+		box-shadow: 0 0 2px #00ffce;
+	}
+	main form fieldset:last-of-type {
+		display: block;
+		text-align: center;
+	}
+	main button {
+		display: inline-block;
+		width: 20%;
+		margin: 1em auto 3em;
+	}
+</style>
+</head>
+<!-- Crearemos un formulario de registro que tendrá:
+•	Nombre y apellidos (obligatorios).
+•	DNI. (obligatorio)
+•	Nombre de usuario. (obligatorio)
+•	Password. (obligatorio)
+•	Email (obligatorio).
+•	Sexo (obligatorio). De tipo radio, con las opciones: hombre, mujer, No Binario/a.
+•	Un conjunto de checkboxes donde se pregunte qué estilo musical nos gusta. Ponga mínimo 5. (obligatorio que hay aparezca HEAVY METAL ;-) )
+•	Fecha de Nacimiento
+•	Una casilla de "Acepto los términos" (obligatorio).
+•	Botones de envío y reset. -->
+<body>
+	<header>
+		<a href="index.html">
+			<figure>
+				<img src="img/logo.svg" title="" alt="Logo Festival" />
+			</figure>
+		</a>
+		<h1>All Stars Music</h1>
+	</header>
+	<form method="post">
+		<fieldset>
+			<label>Usuario:</label>
+			<input type="text" name="usuario" placeholder="Usuario" />
+		</fieldset>
+		<fieldset>
+			<label>Contraseña:</label>
+			<input type="password" name="password" placeholder="Contraseña" />
+		</fieldset>
+		<button type="submit">Login</button>
+		<legend>¿Aún no eres socio/a? <a href="haztevip.html">HAZTE VIP</a></legend>
+	</form>
+	<nav>
+		<ul>
+			<li><a href="haztevip.html">Hazte VIP</a></li>
+			<li><a href="entradas.html">Entradas</a></li>
+			<li><a href="artistas.html">Artistas</a></li>
+			<li><a href="merchan.html">Tienda</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>¿Y tú? ¿Ya eres VIP?</h2>
+		<article>
+			<p>Hazte socio/a de All Stars Music y tendrás acceso a ventajas como:</p>
+			<ul>
+				<li>Newsletter para que no te pierdas ni un evento</li>
+				<li>Agilización en el proceso de reserva de entradas</li>
+				<li>Prioridad en la venta de entradas</li>
+				<li>Pase VIP - ¡no más colas!</li>
+				<li>Entrevistas y contenido exclusivo</li>
+			</ul>
+			<p>Rellena el formulario y suscríbete - ¡es gratis!</p>
+		</article>
+		<form method="post" id="vip">
+			<fieldset>
+				<article>
+					<label>Usuario:</label>
+					<input type="text" name="newuser" minlength="6" pattern="\w{6,}" title="6 o más caracteres" placeholder="Usuario" required />
+				</article>
+				<article>
+					<label>Contraseña:</label>
+					<input type="password" name="newpass" minlength="6" pattern=".{6,}" title="6 o más caracteres" placeholder="Contraseña" required />
+				</article>
+			</fieldset>
+			<fieldset>
+				<article>
+					<label>Nombre:</label><br />
+					<input type="text" name="nombre" pattern="[a-zA-ZñÑçÇáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜ\s]{1,}" required />
+				</article>
+				<article>
+					<label>Apellidos:</label><br />
+					<input type="text" name="apellidos" pattern="[a-zA-ZñÑçÇáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜ\s]{1,}" required />
+				</article>
+				<article>
+					<label>DNI:</label><br />
+					<input type="text" name="dni" pattern="(([XYZ])|(\d))\d{7}[^a-zIUO\d\W_]" title="Debe contener 7 números y una letra" required />
+				</article>
+				<section>
+					<label>Género:</label>
+					<article>
+						<input type="radio" name="genero" value="H" required /><label>Hombre</label>
+					</article>
+					<article>
+						<input type="radio" name="genero" value="M" required /><label>Mujer</label>
+					</article>
+					<article>
+						<input type="radio" name="genero" value="N" required /><label>No binario</label>
+					</article>
+				</section>
+				<section>
+					<label>Fecha de nacimiento:</label>
+					<input name="edad" type="date" max="2008-07-31">
+				</section>
+				<section>
+					<label>Dirección de email:</label>
+					<article>
+						<input type="email" name="email" placeholder="tunombre@ejemplo.com" required />
+					</article>
+				</section>
+			</fieldset>
+			<fieldset>
+				<label>¿Qué género musical te gusta?</label>
+				<article>
+					<input type="checkbox" name="rock" value="1" checked /><label>Rock</label><br />
+				</article>
+				<article>
+					<input type="checkbox" name="pop" value="1" /><label>Pop</label><br />
+				</article>
+				<article>
+					<input type="checkbox" name="synth" value="1" /><label>Synth</label>
+				</article>
+				<article>
+					<input type="checkbox" name="house" value="1" /><label>House</label>
+				</article>
+				<article>
+					<input type="checkbox" name="metal" value="1" /><label>Metal</label>
+				</article>
+			</fieldset>
+			<fieldset>
+				<input type="checkbox" name="acuerdo" value="1" required />
+				<label>He leído los términos y condiciones</label>
+			</fieldset>
+			<legend>* obligatorio</legend>
+		</form>
+		<button type="submit" form="vip">Enviar</button>
+		<button type="reset" form="vip">Borrar</button>
+		<h3>Si tienes problemas, utiliza el formulario de <a href="entradas.html">Contacto</a></h3>
+	</main>
+	<footer>
+		<figure>
+			<img src="img/logo.svg" title="" alt="Logo Festival" />
+		</figure>
+		<address>
+			<p>Potsdamer Straße 96</p>
+			<p>10785 Berlin</p>
+		</address>
+		<ul>
+			<li><a href="tel:(030)5386-3750">(030) 5386-3750</a></li>
+			<li><a href="mailto:admin@allstarsmusic.com">admin@allstarsmusic.com</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

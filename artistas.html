@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Stars Music - Invitados</title>
+	<link rel="stylesheet" type="text/css" href="final.css">
+<style>
+	main section:nth-of-type(odd) {
+		flex-direction: row-reverse;
+	}
+	main section:hover {
+		box-shadow: 0 0 20px #00ffce;
+	}
+	main section article:has(p) {
+		margin: 1% 2em 2em;
+	}
+	main section article p {
+		text-align: justify;
+	}
+	#expand {
+		background-color: initial;
+		color: #FF692A;
+		text-align: right;
+	}
+	#more { display: none; }
+</style>
+</head>
+<!-- 2. Una página con el listado de servicios, conciertos, noticias o artículos, donde se muestre un listado de 5 o más con las siguientes características.
+El listado deberá tener foto y texto, que se irán alternando de posición según se pare o impar.
+(Foto - Texto, Texto - Foto, Foto - Texto, Texto - Foto ...)
+Al hacer la web versión móvil, la foto y el texto deben caer uno debajo del otro.
+EXTRA / OPCIONAL -> Al hacer clic en una de las opciones del listado, se abrirá una página, con información detallada sobre lo que hemos clicado. (hacerlo en mínimo 2 de las opciones) -->
+<body>
+	<header>
+		<a href="index.html">
+			<figure>
+				<img src="img/logo.svg" title="" alt="Logo Festival" />
+			</figure>
+		</a>
+		<h1>All Stars Music</h1>
+	</header>
+	<form method="post">
+		<fieldset>
+			<label>Usuario:</label>
+			<input type="text" name="usuario" placeholder="Usuario" />
+		</fieldset>
+		<fieldset>
+			<label>Contraseña:</label>
+			<input type="password" name="password" placeholder="Contraseña" />
+		</fieldset>
+		<button type="submit">Login</button>
+		<legend>¿Aún no eres socio/a? <a href="haztevip.html">HAZTE VIP</a></legend>
+	</form>
+	<nav>
+		<ul>
+			<li><a href="haztevip.html">Hazte VIP</a></li>
+			<li><a href="entradas.html">Entradas</a></li>
+			<li><a href="artistas.html">Artistas</a></li>
+			<li><a href="merchan.html">Tienda</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Artistas invitados</h2>
+		<p>All Stars Music acoge a artistas internacionales de diversos géneros musicales, para los inconformistas que son incapaces de quedarse con un favorito.</p>
+		<p><a href="entradas.html">Reserva ya tu entrada</a> y súmate al evento del año para disfrutar de 4h ininterrumpidas de las actuaciones en directo de estas estrellas.</p>
+		<section>
+			<figure>
+				<img src="img/paramore.jpg" title="" alt="Paramore" />
+			</figure>
+			<article>
+				<h2>Paramore</h2>
+				<p>Paramore es una banda estadounidense de rock integrada por Hayley Williams (voz), Taylor York (guitarra) y Zac Farro (batería). Fue formada en Franklin, Tennessee, en 2004, por Williams y Jeremy Davis (bajo) junto con Josh Farro (guitarra líder y coros), Zac Farro (batería) y Jason Bynum (guitarra rítmica). En 2008, recibió su primera nominación a los premios Grammy en la categoría de mejor artista nuevo.</p>
+				<p>El estilo musical de Paramore ha sido catalogado como emo y pop punk. Después de entrevistar a Williams, Joshua Martin argumentó que «la banda no se resume simplemente a una chica pop punk con cabello rojo y con una actitud enérgica; su música es diferente a lo tradicional, como ellos.»</p>
+			</article>
+		</section>
+		<section>
+			<figure>
+				<img src="img/owlcity.jpg" title="" alt="Owl City" />
+			</figure>
+			<article>
+				<h2>Owl City</h2>
+				<p>Owl City es un proyecto musical estadounidense de synth pop y música electrónica creado por Adam Young, que mezclaba música en el sótano de la casa de sus padres en Owatonna, Minnesota, como resultado de su insomnio. Young escribe todas las canciones para Owl City y sus influencias son la música disco y la música electrónica europea. Consiguió popularidad gracias a canciones como «Fireflies», «Good Time», «When Can I See You Again», «Galaxies» o «Shooting Star», entre otros. Aproximadamente ha vendido 5 millones de discos y más de 20 millones de canciones en todo el mundo.</p>
+				<p>La música de Owl City es descrita como indietronica y synthpop y, a menudo se describe como pertenecientes al género de la música electrónica. Young ha declarado que está inspirado en la música electrónica europea a la hora de escribir las canciones de Owl City, así como los géneros instrumentales como drone, ambient y post-rock. Cita sus mayores influencias como Johnathon Ford de Unwed Sailor y Thomas Newman.</p>
+			</article>
+		</section>
+		<section>
+			<figure>
+				<img src="img/okgo.jpg" title="" alt="Ok GO" />
+			</figure>
+			<article>
+				<h2>Ok GO</h2>
+				<p>OK Go es una banda de indie rock y rock alternativo formada en Chicago, aunque con sede en Los Ángeles. El grupo está formado por Damian Kulash (voz y guitarra), Tim Nordwind (bajo), Dan Konopka (batería) y Andy Ross (guitarra y teclado). Hasta la fecha han sacado cuatro álbumes: OK Go, Oh No, Of the blue colour of the sky y Hungry Ghosts. OK Go es conocido por sus creativos vídeos musicales, entre ellos «Here It Goes Again» (el cual ganó el Premio Grammy al mejor vídeo musical en 2007), «This Too Shall Pass», «White Knuckles», «Needing/Getting», «The Writing's on the Wall» y «I Won't Let You Down».</p>
+				<p>Damian Kulash dijo que la banda no había producido los videos musicales como parte de ninguna campaña de marketing "maquiavélica". «En ninguno de los casos pensamos: 'A-ja, esto hará que la gente compre nuestros discos'. Siempre ha sido nuestra posición que la razón por la que terminas en una banda de rock es que quieres hacer cosas. Quieres hacer cosas creativas para ganarte la vida.»</p>
+			</article>
+		</section>
+		<section>
+			<figure>
+				<img src="img/billie.jpg" title="" alt="Billie Eilish" />
+			</figure>
+			<article>
+				<h2>Billie Eilish</h2>
+				<p>Billie Eilish Pirate Baird O'Connell (Los Ángeles, 18 de diciembre de 2001), conocida simplemente como Billie Eilish, es una cantante, compositora y productora musical estadounidense. Ganó la atención del público por primera vez en 2015 con su sencillo debut «Ocean Eyes», escrito y producido por su hermano Finneas O'Connell, con quien colabora en música y espectáculos en vivo. En 2017, lanzó su primer EP, Don't Smile at Me. Comercialmente exitoso, alcanzó el top 15 de las listas de éxitos en numerosos países, incluidos Estados Unidos, Reino Unido y Australia.</p>
+				<p>Eilish tiene un rango vocal de soprano. Avery Stone de Noisey describió su voz como «etérea», y Maura Johnston de Rolling Stone la caracterizó como «susurrante». Doreen St. Félix de The New Yorker opinó que tiene una «voz ronca y arrastrada que puede adelgazar hasta convertirse en aflautada», y agregó que su «versión lúdica de la angustia adolescente gótica» y su «álbum debut saturado electro» cautivaron a una audiencia diversa.</p>
+			</article>
+		</section>
+		<section>
+			<figure>
+				<img src="img/black.jpg" title="" alt="Black Sabbath" />
+			</figure>
+			<article>
+				<h2>Black Sabbath</h2>
+				<p>Black Sabbath es una banda británica de heavy metal formada en 1968 en Birmingham por Tony Iommi (guitarra), Ozzy Osbourne (voz), Geezer Butler (bajo) y Bill Ward (batería). Influenciados por la música de Blue Cheer, Cream o Vanilla Fudge, la agrupación incorporó desde sus inicios letras sobre ocultismo y terror con guitarras afinadas de modo más grave y consiguió varios discos de oro y platino en la década de 1970. Son los pioneros del heavy metal junto a otros grupos contemporáneos como Budgie, Coven, Pentagram, y Sir Lord Baltimore.</p>
+				<p>Al ser una de las primeras y más influyentes bandas de heavy metal de todos los tiempos, Black Sabbath ayudó a desarrollar el género con publicaciones tales como Paranoid, álbum que logró cuatro certificaciones de platino de la RIAA. Han vendido más de 80 millones de discos en todo el mundo, incluidos 15 millones de copias solo en los Estados Unidos.</p>
+			</article>
+		</section>
+		<section>
+			<figure>
+				<img src="img/albert.jpg" title="" alt="Albert Bassons" />
+			</figure>
+			<article>
+				<h2>Albert Bassons</h2>
+				<p>Programador de vocación y metalero de afición, Albert Bassons hizo su debut como solista en junio de 2026 con un éxito arrollador en la escena <i>indie</i> del público hispanohablante. Su primer álbum, «The Wild Side» acumuló 3 millones y medio de reproducciones en Spotify y fue galardonado como el estreno más existoso de la plataforma en su género.</p>
+				<p>Su inusual rango vocal es el mayor punto fuerte para sus oyentes. Pedro Sánchez, presidente de España, comentaba «Es lo más raro que he escuchado en mi vida, pero eso es lo que lo hace especial». La prensa califica su estilo como un heavy metal oscuro con influencia gótica, cargado de emoción. El artista admitió que el single insignia de The Wild Side, «Sick of this», fue fruto del hartazgo con las exigencias del estilo de vida que llevaba hasta la fecha. A día de hoy, la viralidad le abre las puertas para dedicarse a la música a tiempo completo.</p>
+			</article>
+		</section>
+		<section>
+			<figure>
+				<img src="img/rosalia.jpg" title="" alt="Rosalía" />
+			</figure>
+			<article>
+				<h2>Rosalía</h2>
+				<p>Rosalía Vila Tobella (San Esteban Sasroviras, Barcelona, 25 de septiembre de 1992), es una cantante, compositora, productora, actriz y empresaria española. Nacida y criada en las afueras de Barcelona, ha sido descrita por la emisora de radio estadounidense NPR como una «estrella del pop atípica» debido a «su versatilidad musical y tendencias experimentales que desdibujan los límites entre distintos géneros».</p>
+				<p>La música de Rosalía ha sido descrita como «desafiante» tanto para ella como para el oyente. Denotada por la conceptualidad y la constante transformación de género de sus álbumes y sencillos, la música de Rosalía ha evolucionado desde el folk hasta el mainstream y el avant-pop. Como Rosalía tiene un máster en interpretación flamenca, comenzó su carrera profesional como cantaora de pleno derecho, y evolucionó hacia un campo urbano más convencional sin abandonar la esencia flamenca que caracteriza su arte.</p>
+			</article>
+		</section>
+		<section>
+			<figure>
+				<img src="img/mystery.jpg" title="" alt="Mystery Skulls" />
+			</figure>
+			<article>
+				<h2>Mystery Skulls</h2>
+				<p>Mystery Skulls es un proyecto musical estadounidense de indie pop/electrónica liderado por Luis Alberto Dubuc Jr., originario de Dallas, Texas, pero que actualmente desarrolla su actividad desde Los Ángeles, California. Se fundó en 2011 después de que su proyecto anterior, The Secret Handshake, se disolviera. Desde su transición, firmó con Warner Music Group y ha colaborado con varios artistas como Brandy Norwood y Nile Rodgers.</p>
+				<p>Se presenta como un grupo de música ficticio compuesto por un equipo de investigadores paranormales - Vivi, Arthur, Mystery, y el fallecido Lewis que ahora les atormenta. Creció su popularidad tras el estreno de vídeos musicales animados que contaban su historia, con temas palpitantes que recuerdan a videojuegos de ritmo contrastados con la apariencia inocente de series como <i>Scooby Doo</i> pero de trasfondo inquietante. Sus vocales atenuadas simulan los susurros de un fantasma que, junto al bajo electrónico en tonos graves y profundos, crean un estilo musical único y cautivador.</p>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<figure>
+			<img src="img/logo.svg" title="" alt="Logo Festival" />
+		</figure>
+		<address>
+			<p>Potsdamer Straße 96</p>
+			<p>10785 Berlin</p>
+		</address>
+		<ul>
+			<li><a href="tel:(030)5386-3750">(030) 5386-3750</a></li>
+			<li><a href="mailto:admin@allstarsmusic.com">admin@allstarsmusic.com</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

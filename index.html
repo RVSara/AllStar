@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="final.css">
+	<title>All Stars Music</title>
+<style>
+	main figure {
+		position: relative;
+	}
+	main>figure {
+		box-shadow: 0 0 10px #00ffce;
+	}
+	main figcaption {
+		width: fit-content;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 1em;
+		font-size: 1.25em;
+		background-color: #000;
+		border-radius: 25px;
+	}
+	main figcaption:hover {
+		background-color: #ddd;
+	}
+	main figcaption a {
+		color: #ddd;
+	}
+	main figcaption:hover a {
+		color: #000;
+	}
+	main section article {
+		max-width: 60%;
+	}
+	main section article:has(dl) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	main section article dl {
+		flex: 1;
+		margin: 0 0 1.25em 0;
+	}
+	main section article dl dt {
+		margin-top: 1em;
+		font-weight: bold;
+	}
+	main section article dl dd {
+		padding: 0 1em;
+		font-size: 0.75em;
+	}
+	div a {
+		font-size: 2em;
+		margin-top: 0;
+	}
+</style>
+</head>
+<!-- 1. Una página de portada, llamada index.html que dispondrá de la presentación del sitio web.
+La estructura debe estar hecha con GRID y no puede ser todo en caída. Debe tener elementos laterales.
+(Tipo el proyecto que hicimos de plantillas o el de la Super Nintendo, pero NO PUEDEN SER la misma estructura que ninguno de aquellos 3).
+El formulario de login debe existir en todas las páginas y debe tener los campos user y password, así como un botón para enviar los datos. -->
+<body>
+	<header>
+		<a href="index.html">
+			<figure>
+				<img src="img/logo.svg" title="" alt="Logo Festival" />
+			</figure>
+		</a>
+		<h1>All Stars Music</h1>
+	</header>
+	<form method="post">
+		<fieldset>
+			<label>Usuario:</label>
+			<input type="text" name="usuario" placeholder="Usuario" />
+		</fieldset>
+		<fieldset>
+			<label>Contraseña:</label>
+			<input type="password" name="password" placeholder="Contraseña" />
+		</fieldset>
+		<button type="submit">Login</button>
+		<legend>¿Aún no eres socio/a? <a href="haztevip.html">HAZTE VIP</a></legend>
+	</form>
+	<nav>
+		<ul>
+			<li><a href="haztevip.html">Hazte VIP</a></li>
+			<li><a href="entradas.html">Entradas</a></li>
+			<li><a href="artistas.html">Artistas</a></li>
+			<li><a href="merchan.html">Tienda</a></li>
+		</ul>
+	</nav>
+	<main>
+		<figure>
+			<img src="img/portada.jpg" title="" alt="Sala de concierto" />
+			<figcaption><a href="entradas.html">COMPRA YA TUS ENTRADAS</a></figcaption>
+		</figure>
+		<section>
+			<h2>Sobre All Stars Music</h2>
+			<article>
+				<p>El evento musical del año llega a Europa con los artistas internacionales que más lo rompen en los rankings.</p>
+				<p>All Stars Music invita a grupos y cantantes de diversos géneros musicales para una gira única en su especie que armoniza el rock, el pop, la electrónica y hasta el metal, para aquellos que disfrutan de la buena música sea del género que sea.</p>
+				<p>Cada concierto contará con canciones y actuaciones sin interrupciones hasta que el cuerpo no aguante, además de ofertar barra libre y una tienda llena de productos de edición limitada solo al evento.</p>
+				<p>¿A qué esperas? <a href="entradas.html">Reserva ya tu entrada</a> y atrévete a vivir una experiencia inigualable.</p>
+			</article>
+		</section>
+		<section>
+			<article>
+				<h2>Fechas</h2>
+				<dl>
+					<dt>Portugal</dt>
+					<dd>LX Factory, Lisboa</dd>
+					<dd>25 de julio 18:00 </dd>
+					<dt>España</dt>
+					<dd>Estadio Santiago, Madrid</dd>
+					<dd>28 de julio 20:00 </dd>
+					<dt>Italia</dt>
+					<dd>Stadio San Siro, Milán</dd>
+					<dd>30 de julio 19:00</dd>
+					<dt>Francia</dt>
+					<dd>Plenitude Arena, París</dd>
+					<dd>1 de agosto 20:00</dd>
+				</dl>
+				<dl>
+					<dt>Reino unido</dt>
+					<dd>The O2 Arena, Londres</dd>
+					<dd>3 de agosto 18:00</dd>
+					<dt>Dinamarca</dt>
+					<dd>K.B. Hallen, Copenhagen</dd>
+					<dd>6 de agosto 19:00</dd>
+					<dt>Alemania</dt>
+					<dd>Zitadelle Spandau, Berlín</dd>
+					<dd>8 de agosto 17:00</dd>
+					<dt>Suecia</dt>
+					<dd>WiZink Center, Estocolmo</dd>
+					<dd>11 de agosto 17:00</dd>
+				</dl>
+				<dl>
+					<dt>Finlandia</dt>
+					<dd>Hartwall Arena, Helsinki</dd>
+					<dd>13 de agosto 18:00</dd>
+					<dt>Polonia</dt>
+					<dd>TORWAR, Varsovia</dd>
+					<dd>15 de agosto 20:00</dd>
+					<dt>Rumanía</dt>
+					<dd>Control Club, Bucarest</dd>
+					<dd>18 de agosto 19:00</dd>
+					<dt>Grecia</dt>
+					<dd>Water Square, Atenas</dd>
+					<dd>21 de agosto 19:00</dd>
+				</dl>
+			</article>
+			<article>
+				<figure>
+					<img src="img/artistas.jpg" title="" alt="Guitarrista entre una multitud" />
+					<figcaption><a href="artistas.html">ARTISTAS INVITADOS</a></figcaption>
+				</figure>
+			</article>
+		</section>
+		<section>
+			<h2>¿Aún no eres socio/a?</h2>
+			<div>
+				<a href="haztevip.html">Hazte VIP</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<figure>
+			<img src="img/logo.svg" title="" alt="Logo Festival" />
+		</figure>
+		<address>
+			<p>Potsdamer Straße 96</p>
+			<p>10785 Berlin</p>
+		</address>
+		<ul>
+			<li><a href="tel:(030)5386-3750">(030) 5386-3750</a></li>
+			<li><a href="mailto:admin@allstarsmusic.com">admin@allstarsmusic.com</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

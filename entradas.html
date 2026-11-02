@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Stars Music - Contacto</title>
+	<link rel="stylesheet" type="text/css" href="final.css">
+<style>
+	main > *:not(h2) {
+		width: 80%;
+		margin: auto;
+	}
+	main section:not(:last-of-type) {
+		border: none;
+		align-items: stretch;
+	}
+	main section:nth-of-type(2) {
+		display: revert;
+		margin-bottom: 3em;
+	}
+	main form {
+		flex: 1;
+		min-width: 400px;
+		max-width: 650px;
+		align-content: center;
+		margin: 2%;
+		padding: 2%;
+		line-height: 1.5em;
+	}
+	main form > * {
+		width: 80%;
+		margin: auto;
+	}
+	main form fieldset {
+		margin: 0 auto;
+		padding: 0.25em;
+		border: none;
+	}
+	main form fieldset:last-of-type, div a {
+		width: fit-content;
+	}
+	main form fieldset label {
+		display: inline-block;
+		min-width: 180px;
+	}
+	main form input[type="text"], main form input[type="email"], main form select {
+		min-width: 240px;
+		border: none;
+	}
+	main form legend:first-of-type {
+		margin: 1em auto;
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+	}
+	main form p {
+		margin-bottom: 1em;
+	}
+	main form button {
+		display: inline-block;
+		margin: 1em;
+	}
+	main section form:last-of-type {
+		background-color: #bbb;
+		color: #000;
+	}
+	main form textarea {
+		display: block;
+		width: 100%;
+		min-height: 5em;
+		border: none;
+	}
+	form:last-of-type label:has(~input:required)::after, 
+	form:last-of-type fieldset>input:required+label::after,
+	form:last-of-type label:has(~select:required)::after,
+	main form:last-of-type legend:last-of-type {
+		color: #FF692A;
+	}
+	main form:last-of-type button {
+		background-color: #000;
+		color: #ddd;
+	}
+	main form:last-of-type button:hover {
+		background-color: #00ffce;
+		color: #000;
+	}
+	main section article {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		min-width: 250px;
+		padding: 1em;
+	}
+	main section article h3 {
+		flex: 1;
+		min-width: 100%;
+	}
+	main section article > *:not(h3) {
+		flex: 1;
+		min-width: 230px;
+		max-width: 230px;
+		text-align: left;
+	}
+	main section iframe {
+		flex: 1;
+		aspect-ratio: 16/9;
+		max-width: 650px;
+	}
+</style>
+</head>
+<!-- El formulario de contacto debe estar en una página diferente y debe tener los siguientes campos:
+•	Nombre de la persona que realiza la consulta.
+•	email (obligatorio).
+•	Motivo de la consulta (obligatorio, desplegable con 5 opciones distintas)
+•	Texto de la consulta (obligatorio textarea).
+•	Botones de envío y reset.
+Además, en la página con el formulario de contacto también deben estar los datos de la nuestra empresa (datos ficticios) y un mapa. -->
+<body>
+	<header>
+		<a href="index.html">
+			<figure>
+				<img src="img/logo.svg" title="" alt="Logo Festival" />
+			</figure>
+		</a>
+		<h1>All Stars Music</h1>
+	</header>
+	<form method="post">
+		<fieldset>
+			<label>Usuario:</label>
+			<input type="text" name="usuario" placeholder="Usuario" />
+		</fieldset>
+		<fieldset>
+			<label>Contraseña:</label>
+			<input type="password" name="password" placeholder="Contraseña" />
+		</fieldset>
+		<button type="submit">Login</button>
+		<legend>¿Aún no eres socio/a? <a href="haztevip.html">HAZTE VIP</a></legend>
+	</form>
+	<nav>
+		<ul>
+			<li><a href="haztevip.html">Hazte VIP</a></li>
+			<li><a href="entradas.html">Entradas</a></li>
+			<li><a href="artistas.html">Artistas</a></li>
+			<li><a href="merchan.html">Tienda</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Contacto</h2>
+		<section>
+			<form>
+				<legend>Reserva ya tus entradas</legend>
+				<p>Recibirás un email con la factura y un enlace para rellenar el resto de tus datos e introducir el método de pago.</p>
+				<fieldset>
+				<label>Nombre:</label>
+				<input type="text" name="attnombre" required />
+				</fieldset>
+				<fieldset>
+				<label>Dirección de email:</label>
+				<input type="email" name="attemail" placeholder="tunombre@ejemplo.com" required />
+				</fieldset>
+				<fieldset>
+				<label>Concierto:</label>
+				<select name="concierto" required >
+					<option value="port">Lisboa, 25 de julio 18:00</option>
+					<option value="esp">Madrid, 28 de julio 20:00</option>
+					<option value="ita">Milán, 30 de julio 19:00</option>
+					<option value="fr">París, 1 de agosto 20:00</option>
+					<option value="eng">Londres, 3 de agosto 18:00</option>
+					<option value="din">Copenhagen, 6 de agosto 19:00</option>
+					<option value="alem">Berlín, 8 de agosto 17:00</option>
+					<option value="swe">Estocolmo, 11 de agosto 17:00</option>
+					<option value="fin">Helsinki, 13 de agosto 18:00</option>
+					<option value="pol">Varsovia, 15 de agosto 20:00</option>
+					<option value="rom">Bucarest, 18 de agosto 19:00</option>
+					<option value="gre">Atenas, 21 de agosto 19:00</option>
+				</select>
+				</fieldset>
+				<fieldset>
+					<label>Entradas:</label>
+					<input name="entradas" type="number" min="1" max="10" required />
+				</fieldset>
+				<fieldset>
+					<input type="checkbox" name="acuerdo" value="1" required />
+					<label>He leído los términos y condiciones</label>
+				</fieldset>
+				<legend>* obligatorio</legend>
+				<fieldset>
+					<button type="submit">Reservar</button>
+					<button type="reset">Borrar</button>
+				</fieldset>
+			</form>
+			<form>
+				<legend>Otras consultas</legend>
+				<fieldset>
+				<label>Nombre:</label>
+				<input type="text" name="attnombre" required />
+				</fieldset>
+				<fieldset>
+				<label>Dirección de email:</label>
+				<input type="email" name="attemail" placeholder="tunombre@ejemplo.com" required />
+				</fieldset>
+				<fieldset>
+				<label>¿Qué necesitas?:</label>
+				<select name="concierto" required >
+					<option value="grupogrande">Soy un grupo de más de 10 personas</option>
+					<option value="acomodar">Necesito acomodaciones especiales</option>
+					<option value="tienda">Sobre la tienda</option>
+					<option value="fraude">Reportar un fraude</option>
+				</select>
+				</fieldset>
+				<fieldset>
+					<label>Detalles:</label>
+					<textarea name="detalles" placeholder="Más detalles sobre tu consulta"></textarea>
+				</fieldset>
+				<fieldset>
+					<input type="checkbox" name="acuerdo" value="1" required />
+					<label>He leído los términos y condiciones</label>
+				</fieldset>
+				<legend>* obligatorio</legend>
+				<fieldset>
+					<button type="submit">Enviar</button>
+					<button type="reset">Borrar</button>
+				</fieldset>
+			</form>
+		</section>
+		<section>
+			<h3>¿Sabías que...?</h3>
+			<p>Las personas con <b>pase VIP de All Stars</b> tienen prioridad en la venta de entradas y en las colas.</p>
+			<div>
+				<a href="haztevip.html">Quiero ser VIP</a>
+			</div>
+		</section>
+		<section>
+			<article>
+				<h3>All Stars Music Inc</h3>
+				<address>
+					<p>Potsdamer Straße 96</p>
+					<p>10785 Berlin</p>
+				</address>
+				<ul>
+					<li><a href="tel:(030)5386-3750">(030) 5386-3750</a></li>
+					<li><a href="mailto:admin@allstarsmusic.com">admin@allstarsmusic.com</a></li>
+				</ul>
+			</article>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.733283913045!2d13.361769077010262!3d52.5020674375566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8504af2819a93%3A0xf6e4d3c0a096a624!2sWintergarten%20Berlin!5e0!3m2!1ses!2ses!4v1784724270726!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+		</section>
+	</main>
+	<footer>
+		<figure>
+			<img src="img/logo.svg" title="" alt="Logo Festival" />
+		</figure>
+		<address>
+			<p>Potsdamer Straße 96</p>
+			<p>10785 Berlin</p>
+		</address>
+		<ul>
+			<li><a href="tel:(030)5386-3750">(030) 5386-3750</a></li>
+			<li><a href="mailto:admin@allstarsmusic.com">admin@allstarsmusic.com</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

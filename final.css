@@ -1,0 +1,174 @@
+figure img {
+	width: 100%;
+}
+figure, body, nav ul, nav ul li {
+	margin: 0;
+}
+
+	header { grid-area: h; }
+	nav { grid-area: n; }
+	main { grid-area: m; }
+	footer { grid-area: ft; }
+	body>form { grid-area: fm; }
+
+body {
+	display: grid;
+	grid-template: 'h fm'
+	'n n'
+	'm m'
+	'ft ft' auto / 50% auto;
+	grid-gap: 1em;
+	min-width: 480px;
+	padding: 2%;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #008066;
+}
+a:hover {
+	color: #00ffce;
+}
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+dd {
+	margin-left: 0;
+}
+body {
+	font-family: montserrat;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+}
+body > * {
+	border: 1px solid #ddd;
+	padding: 2%;
+}
+
+header figure, footer figure {
+	margin: auto;
+	min-width: 60px;
+	max-width: 160px;
+}
+header a:has(figure) {
+	display: block;
+	height: 100%;
+	align-content: center;
+}
+header h1 {
+	display: none;
+}
+
+body>form fieldset {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 40%;
+	margin: 1%;
+	padding: 0;
+	border: none;
+}
+body>form fieldset > * {
+	flex: 1;
+	min-width: 100px;
+}
+nav {
+	background-image: url('img/artistas.jpg');
+	background-size: cover;
+}
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+nav ul li {
+	flex: 1;
+	max-width: 20%;
+	min-width: 96px;
+	list-style-type: none;
+}
+nav ul li a:hover {
+	color: #000;
+}
+
+main>section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ddd;
+	margin: 2% 0;
+}
+main>section>article {
+	flex: 1;
+	margin: 1%;
+	min-width: 440px;
+}
+:is(h2,h3) {
+	width: 100%;
+}
+main>p {
+	width: 75%;
+	margin: 1em auto;
+}
+main form {
+	text-align: left;
+	background-color: #555;
+}
+main form legend:last-of-type {
+	color: #00ffce;
+	font-size: 0.75em;
+}
+main form input {
+	accent-color: #008066;
+}
+button, div a {
+	display: block;
+	min-width: 80px;
+	margin: 1em auto;
+	padding: 0.75em;
+	border: none;
+	border-radius: 25px;
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #000;
+	background-color: #00ffce;
+}
+button:hover, div a:hover {
+	color: #ddd;
+	background-color: #008066;
+}
+main form button:hover {
+	background-color: #000;
+}
+label:has(~input:required)::after,
+fieldset>input:required+label::after,
+label:has(~article input:required)::after,
+label:has(~select:required)::after {
+	content: "*";
+	color: #00ffce;
+}
+:focus {
+	outline-color: #008066;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: right;
+}
+footer > * {
+	flex: 1;
+	min-width: 300px;
+}
+address {
+	font-style: normal;
+}
+ul li {
+	list-style-type: none;
+	margin: 1em 0;
+}
